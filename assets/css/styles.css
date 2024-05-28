@@ -1,0 +1,76 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'main sidebar'
+    'footer footer';
+    grid-template-columns: 1fr 6fr;
+    
+}
+
+.header{
+    grid-area: header ;
+    background-color: rgb(42, 42, 240);    
+    height: 10vh;
+    font-size: x-large;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar{
+    grid-area: sidebar ;
+    background-color: #D7DBDD;    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+button{
+    text-align: center;
+    width: 94%;
+    color: aliceblue;
+    background-color: blue;
+    border: 0;
+    height: 2rem;
+    font-size: large;
+}
+
+.producto img{
+    width: 94%; 
+}
+
+.cuerpo{
+    text-align: center; 
+} 
+
+
+.main{
+    grid-area: main;
+    background-color: #D7DBDD;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 2rem;
+    font-size: large;
+}
+
+.footer{
+    grid-area: footer ;
+    background-color:white;    
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+ 
